@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+/*  Main Container */
+section:first-child::after{
+    /* border: 5px solid rgb(9, 255, 103); */
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background: url(./assets/bg.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    margin-top: 0;
+}
+
+/* Navigation bar  */
+
+.navbar{
+    width: 100vw;
+    height: 18vh;
+    /* border: 3px solid red; */
+    background-color: black;
+    position: relative;
+    color: white;
+}
+
+.navbar img{
+    /* width: 90px;
+    height: 30px; */
+     width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 110px;
+    cursor: pointer;
+
+}
+
+.line{
+    position: absolute;
+    height: 1.5px;
+    background-color: #d5d5d5;
+    top: 50px;
+    left: 240px;
+    display: block;
+    width: 54px;
+    transform: rotate(90deg);
+}
+.list{
+    position: absolute;
+    width: 980px;
+    height: 30px;
+    left: 345px;
+    top:30px;
+    color: #fff;
+    text-align: center;
+}
+.list li{
+    list-style: none;
+    float: left;
+    margin: 10px 30px;
+    width: 49px;
+    height: 23px;
+    cursor: pointer;
+}
+.list li:nth-child(4){
+    margin-left: 65px;
+}
+
+.list li:hover{
+    color: #ba0cc5;
+
+}
+
+.button-small{
+    width: 133px;
+    height: 40px;
+    background-color: #ba0cc5;
+    text-align: center;
+    border-radius: 9px;
+    color: #fff;
+    position: absolute;
+    right: 83px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.button-small:hover{
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+
+/* Hero Section */
+.hero{
+    position: relative;
+    width: 100vw;
+    height: 88vh;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 57px;
+    width: 606px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    left: 400px;
+    top: 80px;
+}
+
+.hero p{
+    position: absolute;
+    width: 606px;
+    top: 270px;
+    left: 390px;
+    font-size: 21px;
+    color: #fff;
+}
+
+.button-large{
+    font-size: 21px;
+    color: #fff;
+    position: absolute;
+    left: 560px;
+    top: 370px;
+    background-color: #ba0cc5;
+    border: none;
+    width: 260px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-large:hover{
+    color: #ba0cc5;
+    background-color: #fff;
+}
